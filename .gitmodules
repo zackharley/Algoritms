@@ -1,0 +1,3 @@
+[submodule "fastest-plane-route"]
+	path = fastest-plane-route
+	url = https://github.com/zackharley/fastest-plane-route
