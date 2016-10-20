@@ -1,6 +1,6 @@
 function activitySelection(activities) {
-  var currentTime = 0;
-  var maxWeightSubset = [];
+  let currentTime = 0;
+  let maxWeightSubset = [];
   
   activities.forEach(activity => {
     if(activity.startTime >= currentTime) {
@@ -12,7 +12,7 @@ function activitySelection(activities) {
   return maxWeightSubset;
 }
 
-var activities = [
+const activities = [
   {
     startTime: 1,
     finishTime: 4
@@ -60,8 +60,8 @@ var activities = [
 ];
 
 function main() {
-  var maxWeightSubset = activitySelection(activities);
-  var output = 'The maximum weight subset is (';
+  const maxWeightSubset = activitySelection(activities);
+  let output = 'The maximum weight subset is (';
   maxWeightSubset.forEach((activity, index) => {
     if(index != maxWeightSubset.length - 1) {
       output += `{${activity.startTime}, ${activity.finishTime}}, `;
